@@ -11,7 +11,34 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        hyphen {
+            bindings = <&kp MINUS>;
+            key-positions = <18 19>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <30 31>;
+        };
+
+        copy_page_url {
+            bindings = <&kp LG(RS(C))>;
+            key-positions = <17 18 19>;
+        };
+
+        kana {
+            bindings = <&kp LANG1>;
+            key-positions = <23 22>;
+        };
+
+        ei {
+            bindings = <&kp LANG2>;
+            key-positions = <22 21>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
