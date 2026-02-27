@@ -68,10 +68,10 @@
 
         layer_3 {
             bindings = <
-&trans           &trans  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))  &trans            &trans  &trans          &kp UP_ARROW    &trans           &trans
-&kp A            &trans  &trans                &trans                &trans            &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&kp LEFT_SHIFT   &kp X   &kp C                 &kp V                 &trans            &trans  &trans          &trans          &kp RIGHT_ALT    &kp TAB
-&kp RIGHT_SHIFT  &trans  &trans                &trans                &kp LEFT_COMMAND  &trans  &trans          &trans          &trans           &trans
+&trans           &trans  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))  &trans            &trans            &trans          &kp UP_ARROW    &trans           &trans
+&kp A            &trans  &trans                &trans                &trans            &trans            &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&kp LEFT_SHIFT   &kp X   &kp C                 &kp V                 &trans            &trans            &trans          &trans          &kp RIGHT_ALT    &kp TAB
+&kp RIGHT_SHIFT  &trans  &trans                &trans                &kp LEFT_COMMAND  &lt 4 LEFT_SHIFT  &trans          &trans          &trans           &trans
             >;
         };
 
