@@ -5,7 +5,7 @@ description: |
 
 compatible: "zmk,input-processor-trackball-to-key"
 
-include: input_processor.yaml
+include: base.yaml
 
 properties:
   "#binding-cells":
