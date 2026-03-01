@@ -1,0 +1,4 @@
+config ZMK_INPUT_PROCESSOR_TRACKBALL_TO_KEY
+    bool "Trackball to key input processor"
+    default y
+    depends on ZMK_POINTING

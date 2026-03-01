@@ -1,0 +1,32 @@
+description: |
+  Converts trackball X-axis relative movement into key tap events.
+  Right movement fires one key (default: Tab), left movement fires another (default: Left Shift).
+  Movement is accumulated and a key tap is emitted each time the threshold is exceeded.
+
+compatible: "zmk,input-processor-trackball-to-key"
+
+include: input_processor.yaml
+
+properties:
+  "#binding-cells":
+    const: 0
+  threshold:
+    type: int
+    default: 10
+    description: Accumulated movement needed to fire one key tap
+  deadzone:
+    type: int
+    default: 1
+    description: Minimum abs(dx) to consider (noise filter)
+  max-per-event:
+    type: int
+    default: 3
+    description: Maximum key taps per single input event
+  right-keycode:
+    type: int
+    default: 0x2B  # HID_USAGE_KEY_KEYBOARD_TAB
+    description: HID keycode emitted on right movement
+  left-keycode:
+    type: int
+    default: 0xE1  # HID_USAGE_KEY_KEYBOARD_LEFTSHIFT
+    description: HID keycode emitted on left movement
