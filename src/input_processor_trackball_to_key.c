@@ -4,7 +4,6 @@
 #include <zephyr/kernel.h>
 #include <zephyr/sys/util.h>
 #include <zephyr/logging/log.h>
-#include <stdlib.h>
 
 #include <drivers/input_processor.h>
 #include <zmk/events/keycode_state_changed.h>
@@ -82,7 +81,7 @@ static int trackball_to_key_handle_event(const struct device *dev,
     int dx = event->value;
 
     /* Deadzone: ignore tiny movements */
-    if (abs(dx) <= cfg->deadzone) {
+    if (ABS(dx) <= cfg->deadzone) {
         event->value = 0;
         return 0;
     }

@@ -5,9 +5,11 @@ description: |
 
 compatible: "zmk,input-processor-trackball-to-key"
 
-include: ip_zero_param.yaml
+include: input_processor.yaml
 
 properties:
+  "#binding-cells":
+    const: 0
   threshold:
     type: int
     default: 10

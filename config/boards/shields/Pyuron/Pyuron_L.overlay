@@ -30,10 +30,6 @@
     };
 };
 
-&trackball_to_key {
-    status = "disabled";
-};
-
 &trackball_split_L {
     device = <&trackball_L>;
 };
