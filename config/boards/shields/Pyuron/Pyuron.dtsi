@@ -28,7 +28,7 @@ split_inputs {
     trackball_to_key: trackball_to_key {
       compatible = "zmk,input-processor-trackball-to-key";
       #input-processor-cells = <0>;
-      threshold = <200>;
+      threshold = <800>;
       deadzone = <5>;
       max-per-event = <2>;
     };
