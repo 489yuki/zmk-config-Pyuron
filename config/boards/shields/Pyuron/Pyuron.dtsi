@@ -28,7 +28,7 @@ split_inputs {
     trackball_to_key: trackball_to_key {
       compatible = "zmk,input-processor-trackball-to-key";
       #input-processor-cells = <0>;
-      threshold = <50>;
+      threshold = <200>;
       deadzone = <5>;
       max-per-event = <2>;
     };
@@ -45,7 +45,7 @@ split_inputs {
 
         layer5_override {
             layers = <5>;
-            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)>, <&trackball_to_key>;
+            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>, <&trackball_to_key>;
         };
     };
 
