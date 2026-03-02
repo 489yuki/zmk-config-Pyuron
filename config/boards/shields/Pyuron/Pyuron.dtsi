@@ -45,7 +45,7 @@ split_inputs {
 
         layer5_override {
             layers = <5>;
-            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>, <&trackball_to_key>;
+            input-processors = <&trackball_to_key>;
         };
     };
 
