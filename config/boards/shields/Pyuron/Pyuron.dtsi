@@ -54,6 +54,14 @@ split_inputs {
       status = "disabled";
       input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
                          <&zip_temp_layer 6 10000>;
+
+        layer1_override {
+            layers = <1>;
+            input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
+                               <&zip_xy_scaler 1 32>,
+                               <&zip_scroll_scaler 1 10>,
+                               <&zip_xy_to_scroll_mapper>;
+        };
     };
 
     kscan0: kscan {
