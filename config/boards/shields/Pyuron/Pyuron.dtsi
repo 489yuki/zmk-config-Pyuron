@@ -53,7 +53,7 @@ split_inputs {
       compatible = "zmk,input-listener";
       status = "disabled";
       input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
-                         <&zip_xy_scaler 4 5>;
+                         <&zip_xy_scaler 1 1>;
 
         layer1_override {
             layers = <1>;
