@@ -1,0 +1,26 @@
+{
+  "title": "Pyuron keymap",
+  "layer_names": {
+    "default_layer": "Default",
+    "layer_1": "Layer 1",
+    "layer_2": "Symbols",
+    "layer_3": "Navigation",
+    "layer_4": "Bluetooth",
+    "layer_5": "Layer 5",
+    "MOUSE": "Mouse"
+  },
+  "combos": {
+    "hyphen": "Insert a hyphen without leaving the alpha layer.",
+    "equal": "Insert an equals sign without leaving the alpha layer.",
+    "copy_page_url": "Send the browser shortcut that copies the current page URL.",
+    "kana": "Switch the host OS to the Japanese kana input mode.",
+    "ei": "Switch the host OS back to direct or alphanumeric input.",
+    "l_click": "Two-key chord for a left mouse click.",
+    "r_click": "Two-key chord for a right mouse click."
+  },
+  "macros": {
+    "to_layer_0": "Helper macro used by the layer-tap behavior to return to layer 0 while forwarding the tapped key.",
+    "alt_and_to_layer": "Hold Left Alt, enable the requested layer, send Tab, then release both. This powers the custom Alt-plus-layer behavior.",
+    "mkp_exit_AML": "Press the requested mouse button, wait for release, tap it again, then jump back to layer 6."
+  }
+}
